@@ -2,9 +2,13 @@
 var cuenta = 0;
 if(document.cookie[8] != undefined){
   cuenta = document.cookie[7] + document.cookie[8]
+  document.querySelectorAll('body > div > main > p:nth-child(9) > a')[0].innerHTML = cuenta;
+
 }
 else if(document.cookie[7] != undefined){
   cuenta = document.cookie[7]
+  document.querySelectorAll('body > div > main > p:nth-child(9) > a')[0].innerHTML = cuenta;
+
 }
 const botonMas = document.querySelectorAll('body > div > main > p:nth-child(6) > a')[0];
 botonMas.addEventListener('click', function(incremento){
